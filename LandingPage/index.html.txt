@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iShirts - Your Style, Our Passion</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="https://dynamic.design.com/asset/logo/08a3d952-0e65-421e-8b2f-794cbe72f531/logo-search-grid-2x?logoTemplateVersion=1&v=638657679384600000&text=ishirts&colorpalette=grayscale" alt="iShirts Logo">
+                <h1>iShirts</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#featured">Featured</a></li>
+                <li><a href="#specials">Specials</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <form class="search-bar">
+                <input type="text" placeholder="Search iShirts...">
+                <button type="submit">Search</button>
+            </form>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h2>Your Style, Our Passion</h2>
+            <p>Explore premium t-shirts that redefine comfort and style.</p>
+            <button class="cta-button">Shop Now</button>
+        </section>
+
+        <section id="about">
+            <h2>About iShirts</h2>
+            <p>We’re committed to providing high-quality, sustainable t-shirts that fit your unique style.</p>
+        </section>
+
+        <section id="featured">
+            <h2>Featured T-Shirts</h2>
+            <div class="image-grid">
+                <img src="https://www.beyoung.in/api/cache/catalog/products/printed_oversized_t-shirt/black_yellow_color_block_oversized_t_shirt_for_men_base_02_02_2024_700x933.jpg" alt="Featured T-shirt 1">
+                <img src="https://www.beyoung.in/api/cache/catalog/products/printed_oversized_t-shirt/red_white_color_block_oversized_t_shirt_for_men_base_02_02_2024_700x933.jpg" alt="Featured T-shirt 2">
+                <img src="https://www.beyoung.in/api/cache/catalog/products/printed_oversized_t-shirt/superior_black_color_block_oversized_t_shirt_for_men_base_02_02_2024_700x933.jpg" alt="Featured T-shirt 3">
+            </div>
+        </section>
+
+        <section id="specials">
+            <h2>Special Offers</h2>
+            <div class="image-grid">
+                <img src="https://www.beyoung.in/api/cache/catalog/products/printed_oversized_t-shirt/future_printed_oversized_t-shirt_for_men_base_10_04_2023_700x933.jpg" alt="Special T-shirt 1">
+                <img src="https://www.beyoung.in/api/cache/catalog/products/printed_oversized_t-shirt/be_kind_printed_oversized_t-shirt_for_men_base_22_05_2023_700x933.jpg" alt="Special T-shirt 2">
+                <img src="https://www.beyoung.in/api/cache/catalog/products/printed_oversized_t-shirt/lilac_white_color_block_oversized_t_shirt_for_men_base_02_02_2024_700x933.jpg" alt="Special T-shirt 3">
+            </div>
+        </section>
+
+        <section id="reviews">
+            <h2>Customer Reviews</h2>
+            <div class="reviews-container">
+                <div class="review">
+                    <p>"The quality is amazing! Definitely worth it."</p>
+                    <span>- Arjun P.</span>
+                </div>
+                <div class="review">
+                    <p>"Stylish and comfortable. My new favorite brand."</p>
+                    <span>- Raghav K.</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: contact@ishirts.com</p>
+            <p>Phone: +91 123-456-7890</p>
+            <div class="social-media">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 iShirts. All rights reserved.</p>
+    </footer>
+</body>
+</html>
