@@ -1,0 +1,113 @@
+const display = document.getElementById('display');
+const buttons = document.querySelectorAll('.button');
+let currentInput = ''; 
+let operator = '';     
+let previousInput = '';
+
+
+buttons.forEach(button => {
+    button.addEventListener('click', (event) => {
+        const value = event.target.dataset.value;
+
+        if (value === 'C') {
+            clearDisplay(); 
+        } else if (value === 'AC') {
+            allClear();
+        } else if (value === '=') {
+            calculate();
+        } else if (['+', '-', '*', '/'].includes(value)) {
+            setOperator(value);
+        } else if (value === '%') {
+            calculatePercentage();
+        } else if (value === '+/-') {
+            toggleSign();
+        } else {
+            appendToDisplay(value);
+        }
+    });
+});
+
+
+function appendToDisplay(value) {
+    if (value === '.' && currentInput.includes('.')) return; // Prevent multiple decimals
+    currentInput += value;
+    display.value = currentInput;
+}
+
+
+function setOperator(value) {
+    if (currentInput === '') return; 
+    if (previousInput !== '') {
+        calculate(); 
+    }
+    operator = value;
+    previousInput = currentInput;
+    currentInput = ''; 
+}
+
+
+function calculate() {
+    if (previousInput === '' || currentInput === '') return; 
+    let result;
+    const num1 = parseFloat(previousInput);
+    const num2 = parseFloat(currentInput);
+
+    switch (operator) {
+        case '+':
+            result = num1 + num2;
+            break;
+        case '-':
+            result = num1 - num2;
+            break;
+        case '*':
+            result = num1 * num2;
+            break;
+        case '/':
+            result = num2 === 0 ? 'Error' : num1 / num2;
+            break;
+        default:
+            return;
+    }
+
+    display.value = result;
+    previousInput = result.toString(); 
+    currentInput = ''; 
+    operator = ''; 
+}
+
+
+function calculatePercentage() {
+    if (currentInput !== '') {
+        currentInput = (parseFloat(currentInput) / 100).toString();
+        display.value = currentInput;
+    } else if (previousInput !== '') {
+        previousInput = (parseFloat(previousInput) / 100).toString();
+        display.value = previousInput;
+    }
+}
+
+
+function toggleSign() {
+    if (currentInput !== '') {
+        currentInput = (-parseFloat(currentInput)).toString();
+        display.value = currentInput;
+    }
+}
+
+
+function clearDisplay() {
+    if (currentInput.length > 0) {
+        currentInput = currentInput.slice(0, -1); // Remove the last character
+        display.value = currentInput || '0'; // Display '0' if input becomes empty
+    } else {
+        display.value = '0'; // Show '0' if currentInput is empty after deletion
+    }
+}
+
+
+function allClear() {
+    currentInput = '';
+    previousInput = '';
+    operator = '';
+    display.value = '0'; // Show '0' on the display after AC
+}
