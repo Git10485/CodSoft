@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ 
+  <section id="profile-section">
+    <div class="container">
+      <div class="profile-block">
+        <img src="https://media.licdn.com/dms/image/v2/D5603AQGqI9lG2lWLVA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1723313774877?e=1737590400&v=beta&t=DVIclih40LMS313sK_nXbvwvcthIONZ13zvBh1u4PN0" alt="Your Name" class="profile-pic">
+        <div class="name-block">
+          <h1>Aryan Vinod Mane</h1>
+          <p>Student of computer science at PCCOER</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I'm Aryan Mane, a second-year Computer Engineering student at PCCOER. I have a strong interest in Web Development and Software Development. I'm passionate about coding and constantly learning new technologies to improve my skills.</p>      
+             <p>I enjoy participating in hackathons,college events and projects, coding challenges, and working on personal projects. I'm eager to apply my knowledge through internships and contribute to real-world tech solutions.
+      </p>
+    </div>
+  </section>
+
+
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>HostelHub</h3>
+          <p>HostelHub is my first group project, developed as part of our course work in Computer Engineering. It is a platform designed to help students find and manage hostels or accommodation near their educational institutions. The project aims to simplify the process of searching for hostels, comparing prices, and reading reviews, all in one place.</p>
+          <a href="https://codepen.io/Lakshya-Lokhande/full/vYMOjrw">View Project</a>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul>
+        <li>Time Management</li>
+        <li>Front-End</li>
+        <li>Problem Solving</li>
+        <li>Creativity</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+    
+      <ul>
+        <li>Email: <a href="mailto:aryan.mane_comp23@pccoer.in">aryan.mane_comp23@pccoer.in</a></li>
+        <li>Phone: +91 123456 7890</li>
+        <li>LinkedIn:  </li>
+      </ul>
+    </div>
+  </section>
+
+ 
+  <footer>
+    <p>&copy; 2024  All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
